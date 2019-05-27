@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cetak_data"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".fragments.FragmentCetakData">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/icon_no_data"
+            android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:text="Whoops . . ."
+            android:textStyle="bold"
+            android:textColor="#666666"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:lineSpacingExtra="5dp"
+            android:text="Belum ada riwayat data pasien!"
+            android:textStyle="italic"
+            android:textColor="#666666"/>
+    </LinearLayout>
+
+
+</LinearLayout>

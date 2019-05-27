@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">EKG Apps</string>
+
+    <string name="debug"> - - - DEBUG EKG Apps - - -</string>
+
+    <string name="sharedpreferences">EKGPreferences</string>
+
+    <string name="title_input_pasien">Input Pasien</string>
+    <string name="title_monitoring">Monitoring</string>
+    <string name="title_cetak_data">Cetak Data</string>
+    <string name="title_pengaturan">Pengaturan</string>
+
+    <string name="param_http_name">patient_name</string>
+    <string name="param_http_age">patient_age</string>
+    <string name="param_http_gender">patient_gender</string>
+    <string name="param_http_address">patient_address</string>
+
+    <string name="param_endpoint">endpoint</string>
+    <string name="param_patient">patient</string>
+    <string name="param_id">id</string>
+    <string name="param_name">name</string>
+    <string name="param_age">age</string>
+    <string name="param_gender">gender</string>
+    <string name="param_address">address</string>
+    <string name="param_status">status</string>
+    <string name="param_datetime">datetime</string>
+    <string name="param_content">content</string>
+    <string name="param_id_patient">id_patient</string>
+    <string name="param_bpm">BPM</string>
+    <string name="param_bpm_val">bpm</string>
+    <string name="param_severity">severity</string>
+    <string name="param_message">message</string>
+
+    <string name="severity_success">success</string>
+    <string name="severity_warning">warning</string>
+    <string name="severity_danger">danger</string>
+
+    <string name="req_input_pasien">REQ_INPUT_PASIEN</string>
+    <string name="req_pasien_proses">REQ_PASIEN_PROSES</string>
+    <string name="req_monitoring">REQ_MONITORING</string>
+    <string name="req_cetak_data">REQ_CETAK_DATA</string>
+
+    <string name="default_ip">http://192.168.0.9/ekg/index.php/</string>
+    <string name="endpoint_input_pasien">api/patient_insert/</string>
+    <string name="endpoint_pasien_proses">api/patient_process/</string>
+    <string name="endpoint_update_status">api/patient_status_update/</string>
+    <string name="endpoint_bpm_monitoring">api/bpm_monitoring/</string>
+    <string name="endpoint_cetak_data">api/patient_riwayat/</string>
+    <string name="endpoint_download">apps/download_pdf/</string>
+    <string name="endpoint_slash">/</string>
+
+    <string name="dialog_loading">Loading . . .</string>
+
+    <string name="status_open">OPEN</string>
+    <string name="status_proses">PROCESS</string>
+    <string name="status_close">CLOSE</string>
+
+    <string name="start_ekg">START EKG</string>
+    <string name="stop_ekg">STOP EKG</string>
+
+    <string name="confirm_exit_title">Konfirmasi</string>
+    <string name="confirm_exit_body">Apakah Anda akan keluar dari aplikasi?</string>
+    <string name="confirm_yes">Ya</string>
+    <string name="confirm_no">Tidak</string>
+
+    <string name="error_parse_json">Terjadi kendala pada saat menerima respon dari server!</string>
+
+    <string name="ekg_report">EKG_report_</string>
+    <string name="ext_pdf">.pdf</string>
+    <string name="notif_download_success">Download riwayat EKG selesai</string>
+    <string name="notif_download_failed">Download riwayat EKG gagal</string>
+
+
+    <string name="preferences_setting_null">Variabel pengaturan server endpoint wajib diisi.</string>
+    <string name="preferences_setting_success">Pengaturan berhasil disimpan.</string>
+    <string name="preferences_setting_failed">Pastikan variabel server endpoint sesuai.</string>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

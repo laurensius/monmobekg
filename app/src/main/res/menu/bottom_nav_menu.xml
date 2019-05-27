@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_input_pasien"
+        android:icon="@drawable/ic_input_pasien"
+        android:title="@string/title_input_pasien" />
+
+    <item
+        android:id="@+id/navigation_monitoring"
+        android:icon="@drawable/ic_monitoring"
+        android:title="@string/title_monitoring" />
+
+    <item
+        android:id="@+id/navigation_cetak_data"
+        android:icon="@drawable/ic_cetak_data"
+        android:title="@string/title_cetak_data" />
+
+    <item
+        android:id="@+id/navigation_pengaturan"
+        android:icon="@drawable/ic_pengaturan"
+        android:title="@string/title_pengaturan" />
+
+</menu>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.FragmentMonitoring">
+
+    <LinearLayout
+        android:id="@+id/ll_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:background="#CCCCCC"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_ekg"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_notif_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:lineSpacingExtra="5dp"
+                    android:visibility="visible"
+                    android:textAlignment="center"
+                    android:textColor="#333333"
+                    android:textSize="8pt"
+                    android:text="Untuk melakukan monitoring dan perekaman data EKG silakan klik tombol START EKG. "/>
+                <TextView
+                    android:id="@+id/tv_notif_no_bpm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:lineSpacingExtra="5dp"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:textColor="#333333"
+                    android:textSize="8pt"
+                    android:text="Belum ada data BPM tersimpan di Database."/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ekg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="START EKG"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#CCCCCC"
+                android:text="Nama Pasien"/>
+
+            <TextView
+                android:id="@+id/tv_nama_pasien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="NAMA PASIEN"
+                android:textSize="8pt"
+                android:textColor="#666666"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#CCCCCC"
+                        android:text="Umur"/>
+
+                    <TextView
+                        android:id="@+id/tv_umur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="0"
+                        android:textSize="8pt"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#CCCCCC"
+                        android:text="Jenis Kelamin"/>
+
+                    <TextView
+                        android:id="@+id/tv_jenis_kelamin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Laki-laki / Perempuan"
+                        android:textSize="8pt"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#CCCCCC"
+                android:text="Alamat"/>
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="ALAMAT"
+                android:textSize="8pt"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@mipmap/icon_no_data"
+                android:layout_marginBottom="32dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:text="Whoops . . ."
+                android:textStyle="bold"
+                android:textColor="#666666"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="8pt"
+                android:lineSpacingExtra="5dp"
+                android:text="Belum ada data pasien, silakan isi data pasien terlebih dahulu!"
+                android:textStyle="italic"
+                android:textColor="#666666"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

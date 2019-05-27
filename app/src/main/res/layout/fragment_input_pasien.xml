@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.FragmentInputPasien">
+
+    <LinearLayout
+        android:id="@+id/ll_input_pasien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@mipmap/icon_input_pasien"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nama Pasien"/>
+
+        <EditText
+            android:id="@+id/et_nama_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:hint="Nama Pasien"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Umur"/>
+
+        <EditText
+            android:id="@+id/et_umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:hint="Umur"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Jenis Kelamin"/>
+
+        <Spinner
+            android:id="@+id/sp_jenis_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Alamat Tinggal"/>
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:lines="5"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:hint="Alamat Tinggal"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#999999"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Simpan Data"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
